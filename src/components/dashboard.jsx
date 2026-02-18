@@ -163,7 +163,7 @@ const Dashboard = () => {
   {fileMeta && (
     <div className="uploaded-info file-container mt-5 fs-5">
 
-      <p>Uploaded File Details</p>
+      <p className="fs-4 fw-bold mt-5" >File Information</p>
 
       <p><strong>File Name:</strong> {fileMeta.fileName}</p>
       <p><strong>Uploaded At:</strong> {fileMeta.uploadDate}</p>

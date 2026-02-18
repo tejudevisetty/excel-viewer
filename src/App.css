@@ -152,6 +152,7 @@
 
 .file-container {
   max-width: 1500px;
+  min-height: 400px !important;
   margin: 0 auto;
 }
 
@@ -264,6 +265,12 @@
 }
 
 /* Pagination */
+
+.pagination-sticky {
+  position: sticky;
+  bottom: 0;
+
+}
 .pagination .page-item.active .page-link {
   background-color: #3a7bd5;
   border-color: #3a7bd5;

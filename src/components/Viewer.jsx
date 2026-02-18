@@ -175,7 +175,7 @@ const Viewer = () => {
           </div>
 
           {/* pagination */}
-          <nav className="mt-4">
+          <nav className="mt-4 pagination-sticky">
             <ul className="pagination justify-content-center">
               <li className={`page-item ${currentPage === 1 ? "disabled" : ""}`}>
                 <button
