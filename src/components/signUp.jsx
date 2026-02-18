@@ -52,7 +52,7 @@ const Signup = () => {
 
            <Formik
           initialValues={{ name: "", email: "", password: "" }}
-          validations={validations}
+          validationSchema={validations}
           onSubmit={handleSubmit}
         >
           {({ isSubmitting }) => (
