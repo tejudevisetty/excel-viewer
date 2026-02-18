@@ -7,7 +7,7 @@ import "../App.css";
 const Login = () => {
   const navigate = useNavigate();
 
-  const validations = Yup.object({
+  const validationSchema = Yup.object({
     email: Yup.string()
       .email("Invalid email format")
       .required("Email is required"),
@@ -52,7 +52,7 @@ const Login = () => {
 
             <Formik
           initialValues={{ email: "", password: "" }}
-          validations={validations}
+          validationSchema={validationSchema}
           onSubmit={handleSubmit}
         >
           {({ isSubmitting }) => (

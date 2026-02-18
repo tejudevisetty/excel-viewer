@@ -8,7 +8,7 @@ const Signup = () => {
   const navigate = useNavigate();
 
   // Validation for form
-  const validations = Yup.object({
+  const validationSchema = Yup.object({
     name: Yup.string().required("Name is required"),
     email: Yup.string()
       .email("Invalid email format")
@@ -52,7 +52,7 @@ const Signup = () => {
 
            <Formik
           initialValues={{ name: "", email: "", password: "" }}
-          validationSchema={validations}
+          validationSchema={validationSchema}
           onSubmit={handleSubmit}
         >
           {({ isSubmitting }) => (
