@@ -96,8 +96,8 @@ const Viewer = () => {
             <div>
 <h4 className="mb-1">
   {fileName ? fileName : " "}
-</h4>              <small>
-                {data.length} Rows, {data[0] ? Object.keys(data[0]).length : 0} Colums
+</h4>              <small >
+                {data.length} Rows, {data[0] ? Object.keys(data[0]).length : 0} Columns
               </small>
             </div>
 
